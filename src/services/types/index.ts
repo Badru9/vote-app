@@ -9,8 +9,8 @@ export interface Candidate {
   chairman: Student;
   deputyChairman: Student;
   votes: number;
-  vision: string;
-  mission: string;
+  vision: Vision;
+  mission: Vision;
   image: string;
 }
 
@@ -18,4 +18,9 @@ export interface Vote {
   id: string;
   candidate: Candidate;
   voter: Student;
+}
+
+interface Vision {
+  title: string;
+  description: string;
 }
